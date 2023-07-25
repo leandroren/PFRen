@@ -1,0 +1,7 @@
+
+@mixin textos($color,$size,$padding){
+    font-size: $size;
+    color: $color;
+    padding: $padding;    
+}
+

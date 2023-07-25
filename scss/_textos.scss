@@ -1,0 +1,29 @@
+/***** Textos *****/
+
+h1{
+    font-size: $textoXl;
+    text-align: center;
+    padding: 2rem 0;
+}
+h2{
+    font-size: $textoXl;
+    text-align: center;
+    padding: 2.5rem 0;
+    margin: 0 10px;
+    color: $white;
+}
+
+h3{
+    text-align: left;
+    color: $white;
+    margin-top: 16%;
+}
+
+p{
+    color: $white;
+    font-size: $textoSm;
+}
+
+a{ text-decoration: none;
+    color: $white;
+    }

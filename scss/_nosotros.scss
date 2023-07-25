@@ -1,0 +1,28 @@
+/***** Nosotros *****/
+
+.nosotros{
+
+.descripcion{
+    margin: 0 auto;
+    text-align: justify;
+}
+p{
+    @include textos($white,$textoMd,$padding);}
+
+        .galeria .row {
+        display: flex;
+        padding: 20px;
+        }
+
+        .columnas{
+            flex: 25%;
+            padding: 10px;
+        }
+
+        img {
+            margin-top: 10px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;}
+    }

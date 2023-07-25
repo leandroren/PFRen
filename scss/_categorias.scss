@@ -1,0 +1,30 @@
+/***** Categorias *****/
+
+.categorias{ margin-top: 50px 0;
+            color: $white;
+
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1% 2%;
+        position: relative;
+    }
+
+
+.imagen-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    border-radius: 5px;
+}
+
+.card:hover .imagen-texto {
+    display: block;
+    color: $white;
+    background: $mainColor;
+    padding: 5px;
+    font-size: $textoSm;
+}}

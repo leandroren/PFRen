@@ -1,0 +1,122 @@
+@media (width < 768px) {
+
+/***** cabecera *****/
+
+.botonera{
+    .logo img{
+        max-width: 200px;
+    }
+
+    a.nav-link{
+        font-size: $textoMd;
+    }
+}
+    /***** carrousel *****/
+img.img-carousel{
+height: auto ;
+}
+
+/***** Productos *****/
+.catalogo-productos {  
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+
+    h2 { text-align: center;
+        padding: 0;
+        margin: 0;}
+
+    .categorias{
+        display: none;
+    }
+
+}
+
+/***** Ofertas *****/
+.catalogo-ofertas{
+grid-template-columns: 1fr;
+
+        .card { 
+        width: 8rem;
+        height: 8rem;
+        margin: 5px;
+        border: none;
+        }
+        
+        h2 { text-align: center;
+            padding: 0;
+            margin: 0;}
+        
+        .categorias{
+            display: none;
+        }
+        }
+
+
+
+/***** Testimonios *****/
+.testimonios{
+    display: none;
+}
+
+/***** Categorias *****/
+.categorias{
+display: none;
+}
+
+/***** Nosotros *****/
+
+.nosotros{
+        margin: 0;
+
+        .descripcion {
+        width: 90%;
+        font-size: $textoMd;
+        padding: 5px;
+        margin: 0 auto;
+}
+.galeria .row {
+    display: flex;
+    flex-direction: column;
+}
+.columnas {
+    flex: 100%;
+    padding: 5px;
+}
+}
+
+
+/***** Contacto *****/
+
+.contacto .mapa { 
+width: 100%;
+height: 50%;
+}
+
+
+/***** Footer *****/
+.footer-contacto p { font-size: $textoSm;
+                    padding: 0 10px;
+            
+                a{display: none;
+                }}
+
+.footer-vinculos{
+display: none;
+}
+
+/***** textos*****/
+
+h2{
+    text-align: center;
+    padding: 0.5px;
+    margin: 10px 0;
+}
+
+.error{
+    img {
+        width: 100%;
+        height: auto;
+}
+}
+}

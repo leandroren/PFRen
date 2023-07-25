@@ -1,0 +1,19 @@
+/***** Testimonios *****/
+
+
+.testimonios .row {
+    justify-content: space-evenly;
+
+                    img{
+                        margin: 0 auto;
+                    }
+                    .card{
+                        border: .5px solid $white;
+                        background-color: $mainColor;
+                    }
+                    p, b{
+                    font-size: $textoMd;
+                    color: $white;
+                    text-align: center;
+                    }
+                }

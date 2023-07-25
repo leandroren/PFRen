@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    z-index:auto;
+    list-style: none;
+    text-decoration: none;
+    font-family: $mainFont; 
+}
+
+body{
+
+    background-image: url(../img/fondo1.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;   }
+
+/***** Boton *****/
+
+.btn{ height: 2%;
+    background-color: #fcfcfc;
+    color: black;
+    
+&:hover{
+    background-color: #000000;
+    border: 0.2px solid white;
+    color: white;
+}}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+.productos { display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px 0;
+    }
+
+
+.card { width: 15rem;
+        height: auto;
+        margin: 5px;
+        padding: 2px;
+        background-color: $white;
+        img{
+            width: 100%;
+            height: 15rem;
+            object-fit: cover;
+        }
+        b, p{
+            color: $mainColor;
+            padding: 10px;
+            text-align: justify;
+}}
+
+.transition:hover { opacity: 0.95;
+    transition:.7s ease all;
+    scale: 0.98;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px rgba(172, 172, 172, 0.51);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(201, 201, 201, 0.51);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(186, 186, 186, 0.51);
+}
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+

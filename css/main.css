@@ -1,0 +1,460 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+.container h1 {
+  color: #fbff29;
+}
+
+/***** Textos *****/
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 2.5rem 0;
+  margin: 0 10px;
+  color: #EEEEEE;
+}
+
+h3 {
+  text-align: left;
+  color: #EEEEEE;
+  margin-top: 16%;
+}
+
+p {
+  color: #EEEEEE;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+* {
+  box-sizing: border-box;
+  z-index: auto;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  background-image: url(../img/fondo1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/***** Boton *****/
+.btn {
+  height: 2%;
+  background-color: #fcfcfc;
+  color: black;
+}
+.btn:hover {
+  background-color: #000000;
+  border: 0.2px solid white;
+  color: white;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px 0;
+}
+
+.card {
+  width: 15rem;
+  height: auto;
+  margin: 5px;
+  padding: 2px;
+  background-color: #EEEEEE;
+}
+.card img {
+  width: 100%;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card b, .card p {
+  color: #111111;
+  padding: 10px;
+  text-align: justify;
+}
+
+.transition:hover {
+  opacity: 0.95;
+  transition: 0.7s ease all;
+  scale: 0.98;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 2px rgba(172, 172, 172, 0.51);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(201, 201, 201, 0.51);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(186, 186, 186, 0.51);
+}
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+  display: none;
+}
+
+/***** Cabecera *****/
+.botonera {
+  height: auto;
+}
+.botonera .logo img {
+  width: 250px;
+  height: auto;
+  padding: 2px;
+}
+.botonera a.nav-link {
+  color: #EEEEEE;
+  font-size: 1.3rem;
+  padding: 1px;
+}
+.botonera a.nav-link:hover, .botonera a.nav-link:active {
+  color: #fbff29;
+}
+.botonera .nav-item:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.botonera .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/***** carrousel *****/
+img.img-carousel {
+  width: 100%;
+  height: auto;
+  margin: 5px 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/***** Productos Destacados *****/
+.catalogo-productos {
+  display: grid;
+  grid-template-columns: 20% 1fr 1fr;
+  grid-template-rows: 10% 1fr 1fr;
+  grid-template-areas: "categorias titulo titulo" "categorias productos productos" "categorias productos productos";
+}
+
+.categorias {
+  grid-area: categorias;
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.productos {
+  grid-area: productos;
+}
+
+.catalogo-productos h2 {
+  text-align: left;
+}
+
+/***** Ofertas *****/
+.catalogo-ofertas {
+  display: grid;
+  grid-template-columns: 20% 1fr 1fr;
+  grid-template-areas: "categorias titulo titulo" "categorias portada portada" "categorias productos productos";
+}
+
+.categorias {
+  grid-area: categorias;
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.productos {
+  grid-area: productos;
+}
+
+.portada {
+  grid: portada;
+}
+.portada img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+}
+.portada video {
+  width: 100%;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.catalogo-ofertas h2 {
+  text-align: left;
+}
+
+/***** Categorias *****/
+.categorias {
+  margin-top: 50px 0;
+  color: #EEEEEE;
+}
+.categorias .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1% 2%;
+  position: relative;
+}
+.categorias .imagen-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  border-radius: 5px;
+}
+.categorias .card:hover .imagen-texto {
+  display: block;
+  color: #EEEEEE;
+  background: #111111;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+/***** Nosotros *****/
+.nosotros .descripcion {
+  margin: 0 auto;
+  text-align: justify;
+}
+.nosotros p {
+  font-size: 1.1rem;
+  color: #EEEEEE;
+  padding: 5px;
+}
+.nosotros .galeria .row {
+  display: flex;
+  padding: 20px;
+}
+.nosotros .columnas {
+  flex: 25%;
+  padding: 10px;
+}
+.nosotros img {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+/***** Contacto *****/
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /***** formulario *****/
+}
+.contacto .mapa {
+  width: 50%;
+  height: 500px;
+  margin-bottom: 50px;
+}
+.contacto .mapa iframe {
+  margin: 20px 0;
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
+}
+.contacto .form-control {
+  background-color: #EEEEEE;
+}
+.contacto ::-moz-placeholder {
+  color: #111111;
+}
+.contacto ::placeholder {
+  color: #111111;
+}
+
+/***** Testimonios *****/
+.testimonios .row {
+  justify-content: space-evenly;
+}
+.testimonios .row img {
+  margin: 0 auto;
+}
+.testimonios .row .card {
+  border: 0.5px solid #EEEEEE;
+  background-color: #111111;
+}
+.testimonios .row p, .testimonios .row b {
+  font-size: 1.1rem;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+/***** Inicio de sesión *****/
+.incioSesion {
+  margin: 0 0 13% 0;
+  color: #EEEEEE;
+}
+.incioSesion h2 {
+  padding: 0 0 1.5rem 0;
+}
+.incioSesion .form-group {
+  padding: 20px;
+}
+
+/***** Footer *****/
+.footer-container {
+  margin-top: 50px;
+  padding: 20px 0;
+  color: #111111;
+  background-color: #EEEEEE;
+}
+.footer-container .footer-vinculos a, .footer-container p {
+  text-align: left;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0 30px;
+  color: #111111;
+}
+.footer-container .redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .redes img {
+  width: 30px;
+  height: 30px;
+  margin: 0px 20px;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error a {
+  text-decoration: none;
+  margin: 25px 0;
+}
+.error img {
+  border-radius: 5px;
+  width: 520px;
+  height: 300px;
+}
+.error button {
+  margin: 25px 0;
+  border-radius: 10px;
+}
+
+@media (width < 768px) {
+  /***** cabecera *****/
+  .botonera .logo img {
+    max-width: 200px;
+  }
+  .botonera a.nav-link {
+    font-size: 1.1rem;
+  }
+  /***** carrousel *****/
+  img.img-carousel {
+    height: auto;
+  }
+  /***** Productos *****/
+  .catalogo-productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .catalogo-productos h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .catalogo-productos .categorias {
+    display: none;
+  }
+  /***** Ofertas *****/
+  .catalogo-ofertas {
+    grid-template-columns: 1fr;
+  }
+  .catalogo-ofertas .card {
+    width: 8rem;
+    height: 8rem;
+    margin: 5px;
+    border: none;
+  }
+  .catalogo-ofertas h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .catalogo-ofertas .categorias {
+    display: none;
+  }
+  /***** Testimonios *****/
+  .testimonios {
+    display: none;
+  }
+  /***** Categorias *****/
+  .categorias {
+    display: none;
+  }
+  /***** Nosotros *****/
+  .nosotros {
+    margin: 0;
+  }
+  .nosotros .descripcion {
+    width: 90%;
+    font-size: 1.1rem;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  .nosotros .galeria .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros .columnas {
+    flex: 100%;
+    padding: 5px;
+  }
+  /***** Contacto *****/
+  .contacto .mapa {
+    width: 100%;
+    height: 50%;
+  }
+  /***** Footer *****/
+  .footer-contacto p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+  .footer-contacto p a {
+    display: none;
+  }
+  .footer-vinculos {
+    display: none;
+  }
+  /***** textos*****/
+  h2 {
+    text-align: center;
+    padding: 0.5px;
+    margin: 10px 0;
+  }
+  .error img {
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=main.css.map */

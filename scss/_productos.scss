@@ -1,0 +1,19 @@
+/***** Productos Destacados *****/
+
+.catalogo-productos{  
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr;
+    grid-template-rows: 10% 1fr 1fr;
+    grid-template-areas:
+    "categorias titulo titulo"
+    "categorias productos productos"
+    "categorias productos productos";
+}
+    .categorias { grid-area: categorias; }
+
+    .titulo { grid-area: titulo;}
+
+    .productos { grid-area: productos; }
+    
+    .catalogo-productos h2 { text-align: left;}
+

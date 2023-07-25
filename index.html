@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!--Metas SEO-->
+    <meta name="description" content="Las mejores ofertas online de instrumentos músicales">
+    <meta name="keywords" content="instrumentos, productos, ofertas, guitarras, bajo eléctrico, taclados">
+    <meta name="author" content="Leandro Ren">
+    <meta name="copyright" content="Propietario del copyright">
+    <title>Mi Tienda Musical</title>
+</head>
+<body>
+    <!--Cabecera-->
+    <header>
+        <nav class="navbar navbar-expand-lg botonera m-2">
+            <div class="container">
+                <a class="logo col-lg-3 col-xl-3" href="./index.html"><img src="./src/logo.png" alt="logo de la página">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                    <div class="collapse navbar-collapse col-lg-5 col-xl-5" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/ofertas.html">Ofertas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/incioSesion.html">Inicio Sesión</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex col-lg-4 col-xl-4" role="search">
+                            <input class="buscador form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+                            <button class="btn me-2" type="submit">Ir</button>
+                            <a href="./pages/incioSesion.html" class="btn me-1">
+                                <i class="bi bi-cart-fill"></i>
+                            </a>
+                        </form>
+                    </div>
+            </div>
+        </nav>            
+    </header>
+
+    <!--Carrusel-->
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/Banner2.png" class="img-carousel" alt="primer foto del corousel">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./img/Banner1.png" class="img-carousel" alt="segunda foto del carousel">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./img/Banner3.png" class="img-carousel" alt="tercera foto del carousel">
+                </div>
+            </div>
+        </div>
+
+    <main class="container"> 
+        <div class="row">
+            <h1>La Mejor Tienda Online</h1>
+        
+            <!--Productos en Ofertas-->
+        <section class="ofertas">
+            <h2>Ofertas especiales</h2>
+
+                <article class="productos">
+                    <div class="card transition col-sm col-md col-xl">
+                        <a href="./pages/ofertas.html">
+                        <img src="./img/ampli1.png" alt="Amplificador de guitarra">
+                        </a>
+                    </div>
+
+                    <div class="card transition col-sm col-md col-xl">
+                        <a href="./pages/ofertas.html">
+                        <img src="./img/auriculares.png" alt="auriculares">
+                        </a>
+                    </div>
+            
+                    <div class="card transition col-sm col-md col-xl">
+                        <a href="./pages/ofertas.html">
+                        <img src="./img/bajo.png" alt="Bajo eléctrico">
+                        </a>
+                    </div>
+                    
+                    <div class="card transition col-sm col-md col-xl">
+                        <a href="./pages/ofertas.html">
+                        <img src="./img/placa.png"  alt="Placa de audio">
+                        </a>
+                    </div>
+                </article> 
+        </section>
+
+    
+        <!--Productos Destacados-->
+        <section>
+            <h2>Productos Destacados</h2>
+
+                <article class="productos">
+                    <figure class="card transition col-sm col-md col-xl">
+                        <img src="./img/bateria1.png" alt="bateria">
+                        <figcaption><b>$705,876</b></figcaption>
+                        <p>Bateria 5 cuerpos</p>
+                    </figure>
+
+                    <figure class="card transition col-sm col-md col-xl">
+                        <img src="./img/cables.png" alt="cables">
+                        <figcaption><b>$5,276</b></figcaption>
+                        <p>Cables</p>
+                    </figure>
+            
+                    <figure class="card transition col-sm col-md col-xl">
+                        <img src="./img/trompeta.png" alt="trompeta">
+                        <figcaption><b>$53,456</b></figcaption>
+                        <p>Trompeta</p>
+                    </figure>
+
+                    <figure class="card transition col-sm col-md col-xl">
+                        <img src="./img/piano.png" alt="piano">
+                        <figcaption><b>$900,876</b></figcaption>
+                        <p>Piano</p>
+                    </figure>
+                </article> 
+        </section>
+
+    <!--Categorias-->
+        <section class="categorias">
+            <h2>Categorias</h2>
+
+                <article class="productos">
+                    <figure class="card transition col-sm-12">
+                        <img src="./img/fondo-guitarra1.jpg" alt="guitarras">
+                        <figcaption class="imagen-texto"><h3>Guitarras</h3></figcaption>
+                    </figure>
+
+                    <figure class="card transition col-sm-12">
+                        <img src="./img/bajos1.jpg" alt="bajos">
+                        <figcaption class="imagen-texto"><h3>Bajos</h3></figcaption>
+                    </figure>
+
+                    <figure class="card transition col-sm-12">
+                        <img src="./img/teclado.jpg" alt="teclados">
+                        <figcaption class="imagen-texto"><h3>Teclados</h3></figcaption>
+                    </figure>
+
+                    <figure class="card transition col-sm-12">
+                        <img src="./img/bateria.jpg" alt="baterias">
+                        <figcaption class="imagen-texto"><h3>Baterías</h3></figcaption>
+                    </figure>
+            
+                    <figure class="card transition col-sm-12">
+                        <img src="./img/mic.jpg" alt="Micrófonos">
+                        <figcaption class="imagen-texto"><h3>Micrófonos</h3></figcaption>
+                    </figure>
+            
+                    <figure class="card col-sm-12 transition">
+                        <img src="./img/consola.jpg" alt="consolas">
+                        <figcaption class="imagen-texto"><h3>Consolas</h3></figcaption>
+                    </figure>
+
+                    <figure class="card col-sm-12 transition">
+                        <img src="./img/parlantes.jpg" alt="parlantes">
+                        <figcaption class="imagen-texto"><h3>Parlantes</h3></figcaption>
+                    </figure>
+                </article> 
+        </section>
+        </div>
+
+    <!--Testimonios-->
+        <section class="testimonios container">
+            <h2>Testimonios de nuestros clientes</h2>
+            <div class="row">
+                <div class="card col-sm-3 col-md-3 col-xl-3">
+                    <img class="rounded" src="./img/testimonio2.png" alt="primer testimonio del cliente">
+                    <p><b>"Julieta Rámirez"</b></p>
+                    <p>¡Increíble experiencia de compra! Compré una guitarra y estoy muy satisfecha. El proceso de compra fue fácil y seguro.</p>
+                </div>
+
+                <div class="card col-sm-3 col-md-3 col-xl-3">
+                    <img class="rounded" src="./img/testimonio1.png" alt="segundo testimonio del cliente">
+                    <p><b>"Claudio Garcia"</b></p>
+                    <p>¡Una experiencia de compra excelente de principio a fin! Me decidí a comprar un teclado y estoy muy contento con mi elección.</p>
+                </div>
+
+                <div class="card col-sm-3 col-md-3 col-xl-3">
+                    <img class="rounded" src="./img/testimonio3.png" alt="tercero testimonio del cliente">
+                    <p><b>"Claudia Gutierrez"</b></p>
+                    <p>Estoy muy contenta con mi compra. Adquirí un set de batería completo y la experiencia superó todas mis expectativas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer-container">
+        <div class="row">
+            <div class="footer-vinculos col-sm-12 col-md">
+                <p><a href="#">Preguntas frecuentes</a></p>
+                <p><a href="#">Información de envíos</a></p>
+                <p><a href="#">Términos y condiciones</a></p>
+                <p><a href="#">¿Cómo comprar?</a></p>
+            </div>
+
+            <div class="footer-contacto col-sm-12 col-md">
+                <p>Dirección: Calle Principal, Ciudad, País</p>
+                <p>Teléfono: +123456789</p>
+                <p>Email: info@tiendamusical.com</p>
+                <p><b>Tienda Musical</b> - Todos los derechos reservados &copy; 2023</p>
+            </div>
+
+            <div class="redes col-sm-12 col-md">
+                <a href="./pages/error_404.html"><img src="./src/instagram.svg" alt="link de instagram"></a>
+                <a href="#"><img src="./src/facebook.svg" alt="link de facebook"></a>
+                <a href="#"><img src="./src/whatsapp.svg" alt="link de whatsapp"></a>
+                <a href="#"><img src="./src/envelope.svg" alt="link del mail"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
