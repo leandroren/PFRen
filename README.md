@@ -18,8 +18,6 @@ La p√°gina se trata de un eCommerce especializado en ofrecer una amplia selecci√
 ## Capturas de pantalla
 ![image](https://github.com/leandroren/PFRen/assets/103762408/4e5cf153-04a0-4a8d-aadf-c2e27616e2ec)
 
-![image](https://leandroren.github.io/Mitiendamusical)
-
 ![image](https://github.com/leandroren/PFRen/assets/103762408/5d678dd9-8db0-4a58-a95b-a307d9e1eab1)
 
 
