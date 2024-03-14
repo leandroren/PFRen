@@ -32,7 +32,7 @@ La p√°gina se trata de un eCommerce especializado en ofrecer una amplia selecci√
 
 ## links:
 
-### Hosting: https://mitiendamusicalcoderhouse.000webhostapp.com
+### Hosting: https://leandroren.github.io/Mitiendamusical
 
 ### Github pages: https://leandroren.github.io/PFRen
 
